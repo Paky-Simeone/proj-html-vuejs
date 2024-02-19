@@ -6,7 +6,9 @@ export default{
 
 <template>
 
+
 </template>
 
-<style scoped>
+<style lang="scss">
+
 </style>
