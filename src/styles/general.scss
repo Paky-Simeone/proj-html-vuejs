@@ -1,5 +1,6 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
+@use './partials/variables' as *;
+@use './partials/mixins' as *;
+
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+

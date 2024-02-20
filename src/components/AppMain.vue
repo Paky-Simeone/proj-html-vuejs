@@ -17,6 +17,8 @@ export default{
             <img src="../assets/img/info22x.jpg" alt="">
             <p>CALIFORNIA ROLLS - $22</p>
         </div>
+    </div>
+    <div>
         
     </div>
 </section>
@@ -48,14 +50,32 @@ export default{
                 width: 150px;
                 height: 150px;
             }
+            
         }
     // Parte Destra Prima Section
     .rightfirstsection{
         width: 50%;
         margin-top: 7rem;
-        margin-right: 10.5rem;
+        margin-right: 8.5rem;
+        margin-left: 2rem;
         .right_img_firstsection{
-            
+            img{
+                position: absolute;
+                width: 35rem;
+                height: 40rem;
+            }
+            img:hover{
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                cursor: pointer;
+                width: 37rem;
+                height: 42rem;
+            }
+            p{
+                position: relative;
+                color: white;
+                top: 37rem;
+                left: 12.5rem;
+            }
         }
     }
 }
