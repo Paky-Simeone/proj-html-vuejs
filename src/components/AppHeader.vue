@@ -1,6 +1,19 @@
 <script>
 export default{
-}
+    data(){
+      return{
+        linkheaders:[
+          { text:"Home",},
+          { text:"Culinary History",},
+          { text:"Our Team",},
+          { text:"Our Menù",},
+          { text:"Take Out",},
+          { text:"Bulletin",},
+          { text:"Reservation",},
+        ],
+      };
+    },
+};
 </script>
 
 <template>

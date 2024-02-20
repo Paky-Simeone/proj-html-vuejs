@@ -32,6 +32,7 @@ export default{
 </script>
 
 <template>
+    <!-- PRIMA SECTION -->
 <section class="firstsection">
     <div class="leftfirstsection">
         <p><strong>HAC TELLUS, FELIS RISUS AT</strong> mattis mattis. Eget euismod semper eget tortor, donec amet, blandit. Tristique facilisi faucibus elementum feugiat in nam in feugiat. Ipsum odio etam duis facilisis amet vulputate.</p>
@@ -47,12 +48,42 @@ export default{
     </div>
     
 </section>
+<!-- SECONDA SECTION -->
 <section class="secondsection">
     <div class="centralfsecondsection">
         <div class="row justify-content-center mt-5">
             <AppCard v-for="pippo in pippos" :item="pippo"></AppCard>
         </div>
     </div>
+</section>
+<!-- TERZA SECTION -->
+<section class="thirdsection">
+    <div class="leftthirdsection">
+        <img src="../assets/img/slider32x.jpg" alt="">
+    </div>
+    <div class="rightthirdsection">
+        <div class="jumbo-text-up">
+            <p class="linea"></p>
+            <p>FINE DINING EXPIRIENCE</p>
+        </div>
+        <div class="jumbo-text-down">
+            <h1>THE BEST TABLE IN <br/>TOWN</h1>
+            <p>Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.</p>
+            <button>EXPLORE THE MENU</button>
+        </div>
+    </div>
+</section>
+<!-- QUARTA SECTION -->
+<section class="quartasection">
+    <H2>What critics are saying about us</H2>
+    <p class="divisore_centrale"></p>
+    <div class="cardcentrale">
+        <div class="leftcardcentrale">
+            <img src="" alt="">
+        </div>
+        <div class="rightcardcentrale"></div>
+    </div>
+    
 </section>
     
 </template>
@@ -101,8 +132,8 @@ export default{
             img:hover{
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
                 cursor: pointer;
-                width: 37rem;
-                height: 42rem;
+                width: 36rem;
+                height: 41rem;
             }
             p{
                 position: relative;
@@ -112,11 +143,101 @@ export default{
             }
         }
     }
-    // Parte Centrale Seconda Section
-    .centralsecondsection{
+}
+// Parte Centrale Seconda Section
+.centralsecondsection{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+// TERZA SECTION
+.thirdsection{
+    display: flex;
+    height: 60vh;
+    margin-top: 3rem;
+    .leftthirdsection{
+        width: 60%;
+        img{
+            width: 100%;
+            height: 60vh;
+            object-fit: cover;
+        }
+    }
+    .rightthirdsection{
+        background-color: $black-color;
+        width: 40%;
+        .jumbo-text-up{
+                margin-top: 3rem;
+                margin-left: 6rem;
+                display: flex;
+                align-items: center;
+                    .linea{
+                        border: 1px solid $gray-color;
+                        border-radius: 2px;
+                        background-color: $gray-color;
+                        width: 40px;
+                        height: 3px;
+                        margin-right: 2rem;
+                    }
+                    p{
+                        color: $gray-color;
+                    }
+            }
+            .jumbo-text-down{
+                margin-top: 3rem;
+                margin-left: 10.5rem;
+                h1{
+                    color: $white-color;
+                    font-size: xxx-large;
+                }
+                p{
+                    color: $gray-color;
+                    margin-top: 3rem;
+                    font-size: large;
+                    width: 20rem;
+                }
+                button{
+                    border: 1px solid $gray-color;
+                    color: $gray-color;
+                    background: none;
+                    padding: 15px;
+                    margin-top: 2rem;
+                }
+                button:hover{
+                    cursor: pointer;
+                    color: $black-color;
+                    background-color: $white-color;
+                }
+            }
+    }
+
+}
+// QUARTA SECTION
+.quartasection{
+    H2{
+    font-family: italic;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    }
+    .divisore_centrale{
+        margin-left: 56rem;
+        text-align: center;
+        border: 1px solid $gray-color;
+        border-radius: 2px;
+        background-color: $gray-color;
+        width: 100px;
+        height: 3px;
+    }
+    .cardcentrale{
         display: flex;
-        justify-content: center;
-        margin-top: 4rem;
+        width: 1200px;
+        .leftcardcentrale{
+            width: 50%;
+        }
+        .rightcardcentrale{
+            width: 50%;
+        }
     }
 }
 </style>
