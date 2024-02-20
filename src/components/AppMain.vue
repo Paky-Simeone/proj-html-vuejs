@@ -1,7 +1,34 @@
 <script>
+import AppCard from './AppCard.vue';
 export default{
+    data(){
+        return{
+            pippos:[
+            {
+                image:"sushi-1.png",
+                title:"THE BEST TABLE IN TOWN",
+                paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit earum voluptates quod dolore, accusantium, natus quos eveniet consequatur quae sit maiores dignissimos fugit illum veritatis. Optio ea veritatis doloremque vel.",
+                bottone:"EXPLORE THE MENU",
+            },
+            {
+                image:"sushi-2.png",
+                title:"PERFECT FOR GROUPS",
+                paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit earum voluptates quod dolore, accusantium, natus quos eveniet consequatur quae sit maiores dignissimos fugit illum veritatis. Optio ea veritatis doloremque vel.",
+                bottone:"MAKE A RESERVATION",
+            },
+            {
+                image:"sushi-3.png",
+                title:"FRESH PRODUCE EVERYDAY",
+                paragraph:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit earum voluptates quod dolore, accusantium, natus quos eveniet consequatur quae sit maiores dignissimos fugit illum veritatis. Optio ea veritatis doloremque vel.",
+                bottone:"LEARN MORE ABOUT US",
+            },
+            ],
+        };
+    },
     
-}
+
+    components:{AppCard},
+};
 </script>
 
 <template>
@@ -18,11 +45,16 @@ export default{
             <p>CALIFORNIA ROLLS - $22</p>
         </div>
     </div>
-    <div>
-        
+    
+</section>
+<section class="secondsection">
+    <div class="centralfsecondsection">
+        <div class="row justify-content-center mt-5">
+            <AppCard v-for="pippo in pippos" :item="pippo"></AppCard>
+        </div>
     </div>
 </section>
-
+    
 </template>
 
 <style lang="scss">
@@ -32,6 +64,7 @@ export default{
 .firstsection{
     background-color: $white-color;
     display: flex;
+
     // Parte Sinistra Prima Section
         .leftfirstsection{
             width: 50%;
@@ -52,6 +85,7 @@ export default{
             }
             
         }
+
     // Parte Destra Prima Section
     .rightfirstsection{
         width: 50%;
@@ -77,6 +111,12 @@ export default{
                 left: 12.5rem;
             }
         }
+    }
+    // Parte Centrale Seconda Section
+    .centralsecondsection{
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
     }
 }
 </style>
