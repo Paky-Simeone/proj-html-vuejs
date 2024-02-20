@@ -15,7 +15,7 @@ export default{
         </div>
         <div class="jumbo-text-down">
             <h1>FINE DINING EXPIRIENCE</h1>
-            <p>Pellentesqye vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.</p>
+            <p>Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.</p>
             <button>EXPLORE THE MENU</button>
         </div>
     </div>
