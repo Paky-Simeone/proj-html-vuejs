@@ -4,6 +4,7 @@ import MenuPlate from './MenuPlate.vue';
 export default{
     data(){
         return{
+            //SUSHI CARD 
             pippos:[
             {
                 image:"sushi-1.png",
@@ -55,9 +56,9 @@ export default{
           description:
             "Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.",
         },
-      ],
+            ],
 
-      mainCourseList: [
+            mainCourseList: [
         {
           plateName: "BRAISED ABALONE",
           price: "$52",
@@ -86,9 +87,9 @@ export default{
           description:
             "Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.",
         },
-      ],
+            ],
 
-      dessertList: [
+            dessertList: [
         {
           plateName: "CHOCOLATE BALL CAKE",
           price: "$13",
@@ -117,14 +118,11 @@ export default{
           description:
             "Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.",
         },
-      ],
+            ],
         };
     },
     
-    
-    
-
-    components:{AppCard , MenuPlate},
+    components:{AppCard, MenuPlate},
 };
 </script>
 

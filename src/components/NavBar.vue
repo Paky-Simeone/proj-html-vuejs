@@ -1,28 +1,55 @@
 <!-- <script>
-import AppHeader from './AppHeader.vue';
 export default{
     data(){
         return{
-            linkheaders:[
-              { text:"Home",},
-              { text:"Culinary History",},
-              { text:"Our Team",},
-              { text:"Our Menù",},
-              { text:"Take Out",},
-              { text:"Bulletin",},
-              { text:"Reservation",},
-            ],
           };
-    },
-    components:{AppHeader},
+        },
+        props:{
+        info:Array,
+      },
 };
 </script>
 
 <template>
-<AppHeader v-for="linkheader in linkheaders" :info="linkheader"></AppHeader>
+<div  v-for="(text, i) in firstList" :key="i" class="header-nav">
+            <span>{{ text.minnie }}</span>
+            <span>{{ text.minnie }}</span>
+            <span>{{ text.minnie }}</span>   
+            <span>{{ text.minnie }}</span>
+            <span>{{ text.minnie }} <button>New</button></span>
+            <span>{{ text.minnie }}</span>
+            <span>{{ text.minnie }}</span>
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+        </div>
 </template>
 
 <style lang="scss">
 @use '../styles/general.scss';
 @use '../styles/partials/variables' as *;
-</style>  -->
+.header-nav{
+        margin-top: 3rem;
+        margin-right: 8.5rem;
+        position: relative;
+        display: flex;
+        justify-content: right;
+        span{
+            margin-right: 50px;
+            color: $gray-color;
+            cursor: pointer;
+                button{
+                    border: 1px solid $white-color;
+                    border-radius: 2px 2px;
+                    background: none;
+                    color: $gray-color;
+                    cursor: pointer;
+                    padding: 0px 2px;
+                }
+                button:hover{
+                    color: $white-color;
+                }
+        }
+        span:hover{
+            color: $white-color;
+        }
+    }
+</style> -->
