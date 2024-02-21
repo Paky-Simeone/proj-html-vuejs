@@ -399,3 +399,66 @@
       }
     }
 }
+// SETTIMA SECTION
+.settimasection{
+    display: flex;
+    height: 80vh;
+    margin-top: 3rem;
+    .leftsettimasection{
+        width: 60%;
+        img{
+            width: 100%;
+            height: 80vh;
+            object-fit: cover;
+        }
+    }
+    .rightsettimasection{
+        background-color: $black-color;
+        width: 40%;
+        .jumbo-text-up{
+                margin-top: 3rem;
+                margin-left: 6rem;
+                display: flex;
+                align-items: center;
+                    .linea{
+                        border: 1px solid $gray-color;
+                        border-radius: 2px;
+                        background-color: $gray-color;
+                        width: 40px;
+                        height: 3px;
+                        margin-right: 2rem;
+                    }
+                    p{
+                        color: $gray-color;
+                    }
+            }
+            .jumbo-text-down{
+                margin-top: 3rem;
+                margin-left: 10.5rem;
+                h1{
+                    color: $white-color;
+                    font-size: xxx-large;
+                }
+                p{
+                    color: $gray-color;
+                    margin-top: 3rem;
+                    font-size: large;
+                    width: 20rem;
+                }
+                button{
+                    border: 1px solid $gray-color;
+                    color: $gray-color;
+                    background: none;
+                    padding: 15px;
+                    margin-top: 2rem;
+                    letter-spacing: 0.2rem;
+                }
+                button:hover{
+                    cursor: pointer;
+                    color: $black-color;
+                    background-color: $white-color;
+                }
+            }
+    }
+
+}

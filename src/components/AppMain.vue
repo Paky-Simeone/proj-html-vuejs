@@ -174,6 +174,20 @@ export default{
 
 <!-- SETTIMA SECTION -->
 <section class="settimasection">
+    <div class="leftsettimasection">
+        <img src="../assets/img/slider72x-scaled.jpg" alt="">
+    </div>
+    <div class="rightsettimasection">
+        <div class="jumbo-text-up">
+            <p class="linea"></p>
+            <p>ENJOY YOUR MEAL AT HOME</p>
+        </div>
+        <div class="jumbo-text-down">
+            <h1>TAKE OUT NOW <br/>AVAILABLE</h1>
+            <p>Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.</p>
+            <button><i class="fa-solid fa-car"></i>   VIEW TAKE OUT MENU</button>
+        </div>
+    </div>
 </section>
 
 </template>
@@ -181,4 +195,5 @@ export default{
 <style lang="scss">
 @use '../styles/main.scss';
 @use '../styles/partials/variables' as *;
+
 </style>
