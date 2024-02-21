@@ -1,5 +1,6 @@
 <script>
 import AppCard from './AppCard.vue';
+import MenuPlate from './MenuPlate.vue';
 export default{
     data(){
         return{
@@ -23,11 +24,107 @@ export default{
                 bottone:"LEARN MORE ABOUT US",
             },
             ],
+
+            // MENU
+            firstList: [
+        {
+          plateName: "AHI SALMON NIGIRI",
+          price: "$48",
+          text: "Mollis ornare sit sapien, sodales. Cursus duis proin semper quisque.",
+          description:
+            "Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.",
+        },
+        {
+          plateName: "UMI MASU SALAD",
+          price: "$21",
+          text: "Mollis ornare sit sapien, sodales. Cursus duis proin semper quisque.",
+          description:
+            "Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.",
+        },
+        {
+          plateName: "TEMAKI WITH CRAB",
+          price: "$32",
+          text: "Mollis ornare sit sapien, sodales. Cursus duis proin semper quisque.",
+          description:
+            "Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.",
+        },
+        {
+          plateName: "CALIFORNIA ROLLS",
+          price: "$22",
+          text: "Mollis ornare sit sapien, sodales. Cursus duis proin semper quisque.",
+          description:
+            "Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.",
+        },
+      ],
+
+      mainCourseList: [
+        {
+          plateName: "BRAISED ABALONE",
+          price: "$52",
+          text: "Mollis ornare sit sapien, sodales. Cursus duis proin semper quisque.",
+          description:
+            "Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.",
+        },
+        {
+          plateName: "TWICE COOKED PORK",
+          price: "$21",
+          text: "Mollis ornare sit sapien, sodales. Cursus duis proin semper quisque.",
+          description:
+            "Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.",
+        },
+        {
+          plateName: "KUNG PAO CHICKEN",
+          price: "$32",
+          text: "Mollis ornare sit sapien, sodales. Cursus duis proin semper quisque.",
+          description:
+            "Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.",
+        },
+        {
+          plateName: "CHAR SIU & SUSHI",
+          price: "$48",
+          text: "Mollis ornare sit sapien, sodales. Cursus duis proin semper quisque.",
+          description:
+            "Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.",
+        },
+      ],
+
+      dessertList: [
+        {
+          plateName: "CHOCOLATE BALL CAKE",
+          price: "$13",
+          text: "Mollis ornare sit sapien, sodales. Cursus duis proin semper quisque.",
+          description:
+            "Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.",
+        },
+        {
+          plateName: "LIME PIE WITH CRUST",
+          price: "$14",
+          text: "Mollis ornare sit sapien, sodales. Cursus duis proin semper quisque.",
+          description:
+            "Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.",
+        },
+        {
+          plateName: "RASPBERRY PEAR CAKE",
+          price: "$18",
+          text: "Mollis ornare sit sapien, sodales. Cursus duis proin semper quisque.",
+          description:
+            "Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.",
+        },
+        {
+          plateName: "CAFÉ AU LAIT",
+          price: "$6",
+          text: "Mollis ornare sit sapien, sodales. Cursus duis proin semper quisque.",
+          description:
+            "Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.",
+        },
+      ],
         };
     },
     
+    
+    
 
-    components:{AppCard},
+    components:{AppCard , MenuPlate},
 };
 </script>
 
@@ -190,10 +287,15 @@ export default{
     </div>
 </section>
 
+<!-- OTTAVA SECTION -->
+<MenuPlate
+:first-list="firstList"
+:mainCourseList="mainCourseList"
+:dessertList="dessertList"></MenuPlate>
+
 </template>
 
 <style lang="scss">
 @use '../styles/main.scss';
 @use '../styles/partials/variables' as *;
-
 </style>
