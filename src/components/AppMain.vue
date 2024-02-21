@@ -32,6 +32,7 @@ export default{
 </script>
 
 <template>
+
     <!-- PRIMA SECTION -->
 <section class="firstsection">
     <div class="leftfirstsection">
@@ -48,6 +49,7 @@ export default{
     </div>
     
 </section>
+
 <!-- SECONDA SECTION -->
 <section class="secondsection">
     <div class="centralfsecondsection">
@@ -56,6 +58,7 @@ export default{
         </div>
     </div>
 </section>
+
 <!-- TERZA SECTION -->
 <section class="thirdsection">
     <div class="leftthirdsection">
@@ -73,171 +76,109 @@ export default{
         </div>
     </div>
 </section>
+
 <!-- QUARTA SECTION -->
 <section class="quartasection">
     <H2>What critics are saying about us</H2>
     <p class="divisore_centrale"></p>
-    <div class="cardcentrale">
-        <div class="leftcardcentrale">
-            <img src="" alt="">
+    <div class="d-flex justify-content-center">
+        <div class="cardcentrale">
+            <div class="leftcardcentrale">
+                <img src="../assets/img/blog72x-600x687.jpg" alt="">
+            </div>
+            <div class="rightcardcentrale">
+                <p class="namestewert">Meggy Stewert</p>
+                <h2 class="titlenytimes">NEW YORK TIMES</h2>
+                <p class="star"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></p>
+                <p class="linea"></p>
+                <p class="textcardcentrale">Non arcu mauris tortor ultrices mollis tellus <br/> eusimod fermentum. Habitant amet tincidunt <br/> id sapien accumsan sed at. <br/> <br/>Mmalesuada ullamcorper amet. Pretium<br/> pretium dignissim nisi.</p>
+                <button>READ FULL ARTICLE</button>
+            </div>
         </div>
-        <div class="rightcardcentrale"></div>
     </div>
-    
+    <div class="d-flex justify-content-center">
+        <div class="cardcentraleleft">
+            <p class="namestewert">Mary Maxey</p>
+                <h2 class="titlenytimes">THE GUARDIAN</h2>
+                <p class="star"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></p>
+                <p class="linea"></p>
+                <p class="textcardcentrale">Non arcu mauris tortor ultrices mollis tellus <br/> eusimod fermentum. Habitant amet tincidunt <br/> id sapien accumsan sed at. </p>
+                <button>READ FULL ARTICLE</button>
+        </div>
+        <div class="cardcentraleright">
+            <p class="namestewert">Patrick Monroe</p>
+                <h2 class="titlenytimes">GLOBE AND MAIL</h2>
+                <p class="star"><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i></p>
+                <p class="linea"></p>
+                <p class="textcardcentrale">Non arcu mauris tortor ultrices mollis tellus <br/> eusimod fermentum. Habitant amet tincidunt <br/> id sapien accumsan sed at. </p>
+                <button>READ FULL ARTICLE</button>
+        </div>
+    </div>
 </section>
-    
+
+<!-- QUINTA SECTION -->
+<section class="quintasection">
+        <p>KUNG PAO CHICKEN - $32</p>
+</section> 
+
+<!-- SESTA SECTION -->
+<section class="sestasection">
+    <h2>Latest News & promotions</h2>
+    <p class="divisore_centrale"></p>
+
+    <!-- box news x3 -->
+    <div class="news-container d-flex space-between">
+      <div class="news-card">
+        <img src="../assets/img/blog92x.jpg" alt="" />
+        <div class="overlay"></div>
+        <div class="news-card-text">
+          <i class="fas fa-link"></i>
+          <h2>THE BEST COFFEE IN TOWN</h2>
+          <p>News</p>
+        </div>
+        <div class="box-hide">
+          <h2 class="text-box">THE BEST COFFEE IN TOWN</h2>
+          <p>By admin | January 7th, 2020 | Categories: News</p>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <img src="../assets/img/blog72x-600x687.jpg" alt="" />
+        <div class="overlay"></div>
+        <div class="news-card-text">
+          <i class="fas fa-link"></i>
+          <h2>DISCOVER OUR NEW MENU</h2>
+          <p>News</p>
+        </div>
+        <div class="box-hide">
+          <h2 class="text-box">DISCOVER OUR NEW MENU</h2>
+          <p>By admin | January 7th, 2020 | Categories: News</p>
+        </div>
+      </div>
+
+      <div class="news-card">
+        <img src="../assets/img/blog82x.jpg" alt="" />
+        <div class="overlay"></div>
+        <div class="news-card-text">
+          <i class="fas fa-link"></i>
+          <h2>WE NOW ACCEPT SQUARE!</h2>
+          <p>News</p>
+        </div>
+        <div class="box-hide">
+          <h2 class="text-box">WE NOW ACCEPT SQUARE!</h2>
+          <p>By admin | January 7th, 2020 | Categories: News</p>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- SETTIMA SECTION -->
+<section class="settimasection">
+</section>
+
 </template>
 
 <style lang="scss">
-@use '../styles/general.scss';
+@use '../styles/main.scss';
 @use '../styles/partials/variables' as *;
-
-.firstsection{
-    background-color: $white-color;
-    display: flex;
-
-    // Parte Sinistra Prima Section
-        .leftfirstsection{
-            width: 50%;
-            margin-left: 10.5rem;
-            margin-top: 10rem;
-            p{
-                width: 28rem;
-            }
-            h1{
-                width: 36rem;
-                margin: 1.5rem 0rem;
-                font-size: xxx-large;
-            }
-            img{
-                margin-top: 1.5rem;
-                width: 150px;
-                height: 150px;
-            }
-            
-        }
-
-    // Parte Destra Prima Section
-    .rightfirstsection{
-        width: 50%;
-        margin-top: 7rem;
-        margin-right: 8.5rem;
-        margin-left: 2rem;
-        .right_img_firstsection{
-            img{
-                position: absolute;
-                width: 35rem;
-                height: 40rem;
-            }
-            img:hover{
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                cursor: pointer;
-                width: 36rem;
-                height: 41rem;
-            }
-            p{
-                position: relative;
-                color: white;
-                top: 37rem;
-                left: 12.5rem;
-            }
-        }
-    }
-}
-// Parte Centrale Seconda Section
-.centralsecondsection{
-    display: flex;
-    justify-content: center;
-    margin-top: 4rem;
-}
-// TERZA SECTION
-.thirdsection{
-    display: flex;
-    height: 60vh;
-    margin-top: 3rem;
-    .leftthirdsection{
-        width: 60%;
-        img{
-            width: 100%;
-            height: 60vh;
-            object-fit: cover;
-        }
-    }
-    .rightthirdsection{
-        background-color: $black-color;
-        width: 40%;
-        .jumbo-text-up{
-                margin-top: 3rem;
-                margin-left: 6rem;
-                display: flex;
-                align-items: center;
-                    .linea{
-                        border: 1px solid $gray-color;
-                        border-radius: 2px;
-                        background-color: $gray-color;
-                        width: 40px;
-                        height: 3px;
-                        margin-right: 2rem;
-                    }
-                    p{
-                        color: $gray-color;
-                    }
-            }
-            .jumbo-text-down{
-                margin-top: 3rem;
-                margin-left: 10.5rem;
-                h1{
-                    color: $white-color;
-                    font-size: xxx-large;
-                }
-                p{
-                    color: $gray-color;
-                    margin-top: 3rem;
-                    font-size: large;
-                    width: 20rem;
-                }
-                button{
-                    border: 1px solid $gray-color;
-                    color: $gray-color;
-                    background: none;
-                    padding: 15px;
-                    margin-top: 2rem;
-                }
-                button:hover{
-                    cursor: pointer;
-                    color: $black-color;
-                    background-color: $white-color;
-                }
-            }
-    }
-
-}
-// QUARTA SECTION
-.quartasection{
-    H2{
-    font-family: italic;
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-    }
-    .divisore_centrale{
-        margin-left: 56rem;
-        text-align: center;
-        border: 1px solid $gray-color;
-        border-radius: 2px;
-        background-color: $gray-color;
-        width: 100px;
-        height: 3px;
-    }
-    .cardcentrale{
-        display: flex;
-        width: 1200px;
-        .leftcardcentrale{
-            width: 50%;
-        }
-        .rightcardcentrale{
-            width: 50%;
-        }
-    }
-}
 </style>

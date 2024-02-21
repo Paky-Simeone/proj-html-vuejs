@@ -1,18 +1,8 @@
 <script>
 export default{
-    data(){
-      return{
-        linkheaders:[
-          { text:"Home",},
-          { text:"Culinary History",},
-          { text:"Our Team",},
-          { text:"Our Menù",},
-          { text:"Take Out",},
-          { text:"Bulletin",},
-          { text:"Reservation",},
-        ],
-      };
-    },
+        // props:{
+        //     info:Object,
+        // },
 };
 </script>
 
@@ -27,7 +17,7 @@ export default{
             <p>THE BEST TABLE IN TOWN</p>
         </div>
         <div class="jumbo-text-down">
-            <h1>FINE DINING EXPIRIENCE</h1>
+            <h1>FINE DINING <br/> EXPIRIENCE</h1>
             <p>Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.</p>
             <button>EXPLORE THE MENU</button>
         </div>
@@ -51,98 +41,5 @@ export default{
 </template>
 
 <style lang="scss">
-@use '../styles/general.scss';
-@use '../styles/partials/variables' as *;
-.header-section{
-    display: flex;
-    .left{
-        width: 40%;
-        background-color: $black-color;
-        height: 80vh;
-            img{
-                margin-top: 3rem;
-                margin-left: 6rem;
-                cursor: pointer;
-            }
-            .jumbo-text-up{
-                margin-top: 3rem;
-                margin-left: 6rem;
-                display: flex;
-                align-items: center;
-                    .linea{
-                        border: 1px solid $gray-color;
-                        border-radius: 2px;
-                        background-color: $gray-color;
-                        width: 40px;
-                        height: 3px;
-                        margin-right: 2rem;
-                    }
-                    p{
-                        color: $gray-color;
-                    }
-            }
-            .jumbo-text-down{
-                margin-top: 3rem;
-                margin-left: 10.5rem;
-                h1{
-                    color: $white-color;
-                    font-size: xxx-large;
-                }
-                p{
-                    color: $gray-color;
-                    margin-top: 3rem;
-                    font-size: large;
-                    width: 20rem;
-                }
-                button{
-                    border: 1px solid $gray-color;
-                    color: $gray-color;
-                    background: none;
-                    padding: 15px;
-                    margin-top: 2rem;
-                }
-                button:hover{
-                    cursor: pointer;
-                    color: $black-color;
-                    background-color: $white-color;
-                }
-            }
-            
-    }
-}
-.right{
-    width: 60%;
-    height: 80vh;
-    img{
-        position: absolute;
-        width: 60%;
-        height: 80vh;
-        object-fit: cover;
-    }
-    .header-nav{
-        margin-top: 3rem;
-        margin-right: 8.5rem;
-        position: relative;
-        display: flex;
-        justify-content: right;
-        span{
-            margin-right: 50px;
-            color: $gray-color;
-            cursor: pointer;
-                button{
-                    border: 1px solid $white-color;
-                    border-radius: 2px 2px;
-                    background: none;
-                    color: $gray-color;
-                    cursor: pointer;
-                }
-                button:hover{
-                    color: $white-color;
-                }
-        }
-        span:hover{
-            color: $white-color;
-        }
-    }
-}  
+@use '../styles/Header.scss';
 </style>
